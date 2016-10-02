@@ -3,6 +3,24 @@ Copyright (c) 2016 cashout Developers
 What is cashout?
 ----------------
 
+CASHOUT SPECIFICATION
+
+
+Algorithm   SHA256
+Type   PoW
+Abbreviation   CSH
+Block reward   50 coins
+Total coin supply   100000000 coins
+Premine percent   20%
+Premine amount   20000000 coins
+Coinbase maturity   2 blocks
+Target spacing   1 minutes
+Target timespan   1000 minutes
+Transaction confirmations   2 blocks
+
+
+
+
 Cashout is an experimental new digital currency that enables instant payments to
 anyone, anywhere in the world. cashout uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried

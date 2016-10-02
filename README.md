@@ -18,10 +18,13 @@ Target spacing   1 minutes
 Target timespan   1000 minutes
 Transaction confirmations   2 blocks
 
+We are going to release the first version of the Cashout website for direct information about CASHOUT
+
+From the website your a going to be able to download the wallet into the download section
 
 
 
-Cashout is an experimental new digital currency that enables instant payments to
+Cashout is a new digital currency that enables instant payments to
 anyone, anywhere in the world. cashout uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. cashout is also the name of the open source

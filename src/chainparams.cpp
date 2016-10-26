@@ -99,16 +99,24 @@ public:
         assert(hashGenesisBlock == uint256("0x00000000ef0a295f1f437ff2ac44a4e4ad880cac7ea9ddc8a9661b2a2e547917"));
         assert(genesis.hashMerkleRoot == uint256("0xb3313651c7c614022e57de95f38ac88093ea2dd70e749c6923c7b77f5340dd12"));
 
-        vSeeds.push_back(CDNSSeedData("54.152.13.56", "54.152.13.56"));
-        vSeeds.push_back(CDNSSeedData("54.211.89.168", "54.211.89.168"));
-	vSeeds.push_back(CDNSSeedData("172.31.60.2", "172.31.60.2"));
+    vSeeds.push_back(CDNSSeedData("84.200.210.130", "84.200.210.130"));
+    vSeeds.push_back(CDNSSeedData("54.211.89.168", "54.211.89.168"));
+	vSeeds.push_back(CDNSSeedData("54.152.13.56", "54.152.13.56"));
+	vSeeds.push_back(CDNSSeedData("91.200.160.46", "91.200.160.46"));
+	vSeeds.push_back(CDNSSeedData("79.233.170.225", "79.233.170.225"));
+	vSeeds.push_back(CDNSSeedData("149.202.121.129", "149.202.121.129"));
+	vSeeds.push_back(CDNSSeedData("190.161.133.145", "190.161.133.145"));
+	vSeeds.push_back(CDNSSeedData("68.114.247.169", "68.114.247.169"));
 	vSeeds.push_back(CDNSSeedData("54.235.232.214", "54.235.232.214"));
+	vSeeds.push_back(CDNSSeedData("104.157.205.8", "104.157.205.8"));
+	vSeeds.push_back(CDNSSeedData("76.95.178.229", "76.95.178.229"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(28);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
-        base58Prefixes[SECRET_KEY] =     list_of(156);
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
+
+        base58Prefixes[PUBKEY_ADDRESS] = boost::assign::list_of(28).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SCRIPT_ADDRESS] = boost::assign::list_of(5).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SECRET_KEY] =     boost::assign::list_of(156).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -166,11 +174,16 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = list_of(111);
-        base58Prefixes[SCRIPT_ADDRESS] = list_of(196);
-        base58Prefixes[SECRET_KEY]     = list_of(239);
-        base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x35)(0x87)(0xCF);
-        base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x35)(0x83)(0x94);
+
+        base58Prefixes[PUBKEY_ADDRESS] = boost::assign::list_of(111).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SCRIPT_ADDRESS] = boost::assign::list_of(196).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[SECRET_KEY]     = boost::assign::list_of(239).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
+
+
+
+
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
 };
